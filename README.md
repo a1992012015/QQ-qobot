@@ -1,20 +1,19 @@
-# Robot
+### Robot
 
+这是一个QQ机器人的开发demo，可以自定义添加各种自己需要的逻辑，tag标签在0.1.0里面的初始模板
+
+### Robot 启动条件
+
+- 必须在本地安装[酷Q](https://cqhttp.cc/docs/4.7/#/)的sdk
+- [node](https://nodejs.org/en/) 10+
+- 掌握 ES6
+
+### Robot 目录结构
 
 ```
 ├── bin
 │   │
 │   └── www => 项目启动文件
-│
-├── config => 项目基本配置，主要配置项目的接口、SESSION、Cookie等信息
-│   │
-│   └── default.js => 默认配置
-│   │
-│   └── development.js => 开发环境配置
-│
-├── initData => 项目的基础数据，包括城市数据等等
-│   │
-│   └── name.json => 李丹的数据
 │
 ├── logs => 日志目录，存放系统生成的日志信息
 │   │
@@ -32,17 +31,7 @@
 │   │
 │   └── stylesheets => css样式存放文件夹
 │
-├── routes => 存放系统路由信息
-│   │
-│   └── index.js => 路由配置信息
-│
-├── screenshot => 这个文件夹我创建的作用是存放临时文件，可有可无
-│   │
-│   └── index.markdown
-│
-├── view => 前端页面存放的位置
-│
-├── web => 网站的核心内容，包括controller、model、mongoose等等
+├── robotPrototype => 网站的核心内容，包括controller、model、mongoose等等
 │   │
 │   └── controller => 控制器 主要连接模型和视图
 │   │
@@ -56,15 +45,19 @@
 │   │
 │   └── util => 自定义目录，目前只存放了日志文件
 │
+├── routes => 存放系统路由信息
+│   │
+│   └── index.js => 路由配置信息
+│
+├── view => 前端页面存放的位置
+│
 ├── app.js => 项目启动入口
 │
 ├── .babelrc => ES6转换配置文件
 │
 ├── .gitignore => git忽略配置文件
 │
-├── cmd.dat => 这是控制台命令
+├── package.json => 项目依赖列表
 │
-├── package.json
-│
-└── README.md
+└── README.md => 说明文件
 ```
